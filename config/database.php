@@ -78,20 +78,70 @@ return [
             'sslmode' => 'prefer',
         ],
 
+        // 'sqlsrv' => [
+        //     'driver' => 'sqlsrv',
+        //     'url' => env('DATABASE_URL'),
+        //     'host' => env('DB_HOST_P_Rubber', 'localhost'),
+        //     'port' => env('DB_PORT_P_Rubber', '1433'),
+        //     'database' => env('DB_DATABASE_P_Rubber', 'forge'),
+        //     'username' => env('DB_USERNAME_P_Rubber', 'forge'),
+        //     'password' => env('DB_PASSWORD_P_Rubber', ''),
+        //     'charset' => 'utf8',
+        //     'prefix' => '',
+        //     'prefix_indexes' => true,
+        // ],
+
         'sqlsrv' => [
             'driver' => 'sqlsrv',
-            'url' => env('DATABASE_URL'),
-            'host' => env('DB_HOST', 'localhost'),
-            'port' => env('DB_PORT', '1433'),
-            'database' => env('DB_DATABASE', 'forge'),
-            'username' => env('DB_USERNAME', 'forge'),
-            'password' => env('DB_PASSWORD', ''),
+            'host' => env('DB_HOST_P_Rubber', '10.10.0.102'),
+            'port' => env('DB_PORT_P_Rubber', '1433'),
+            'database' => env('DB_DATABASE_P_Rubber', 'forge'),
+            'username' => env('DB_USERNAME_P_Rubber', 'sa'),
+            'password' => env('DB_PASSWORD_P_Rubber', 'Sttest123456'),
             'charset' => 'utf8',
             'prefix' => '',
             'prefix_indexes' => true,
         ],
 
+        'sqlsrv2' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST_PURCHASE', '10.10.0.102'),
+            'port' => env('DB_PORT_PURCHASE', '1433'),
+            'database' => env('DB_DATABASE_PURCHASE', 'forge'),
+            'username' => env('DB_USERNAME_PURCHASE', 'sa'),
+            'password' => env('DB_PASSWORD_PURCHASE', 'Sttest123456'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+
+        'sqlsrv3' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST_Sys_rubber', '10.10.0.102'),
+            'port' => env('DB_PORT_Sys_rubber', '1433'),
+            'database' => env('DB_DATABASE_Sys_rubber', 'forge'),
+            'username' => env('DB_USERNAME_Sys_rubber', 'sa'),
+            'password' => env('DB_PASSWORD_Sys_rubber', 'Sttest123456'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
+
+        'sqlsrv4' => [
+            'driver' => 'sqlsrv',
+            'host' => env('DB_HOST_Sys_DataMaster', '10.10.0.102'),
+            'port' => env('DB_PORT_Sys_DataMaster', '1433'),
+            'database' => env('DB_DATABASE_Sys_DataMaster', 'forge'),
+            'username' => env('DB_USERNAME_Sys_DataMaster', 'sa'),
+            'password' => env('DB_PASSWORD_Sys_DataMaster', 'Sttest123456'),
+            'charset' => 'utf8',
+            'prefix' => '',
+            'prefix_indexes' => true,
+        ],
     ],
+
+
+
 
     /*
     |--------------------------------------------------------------------------
